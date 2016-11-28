@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flex Helpers Demo | mralexandernickel</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="dist/flex-attributes.min.css">
+  <link rel="stylesheet" href="demo/demo.min.css">
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68990262-1', 'auto', {
+        "siteSpeedSampleRate": 100
+      });
+      ga("set", "anonymizeIp", true);
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Flex Attributes Demo</h1>
+    <div layout="row" layout-wrap>
+      <div
+        flex-xs="100"
+        flex-sm="50"
+        flex-gt-sm="33">
+        <p>
+          flex-xs="100"<br>
+          flex-sm="50"<br>
+          flex-gt-sm="33"<br>
+        </p>
+      </div>
+      <div
+        flex-xs="100"
+        flex-sm="50"
+        flex-gt-sm="33">
+        <p>
+          flex-xs="100"<br>
+          flex-sm="50"<br>
+          flex-gt-sm="33"<br>
+        </p>
+      </div>
+      <div
+        flex-xs="100"
+        flex-sm="50"
+        flex-gt-sm="33">
+        <p>
+          flex-xs="100"<br>
+          flex-sm="50"<br>
+          flex-gt-sm="33"<br>
+        </p>
+      </div>
+      <div
+        flex-xs="100"
+        flex-sm="50"
+        flex-gt-sm="33">
+        <p>
+          flex-xs="100"<br>
+          flex-sm="50"<br>
+          flex-gt-sm="33"<br>
+        </p>
+      </div>
+      <div
+        flex="100"
+        flex-gt-sm="66">
+        <p>
+          flex="100"<br>
+          flex-gt-sm="66"<br>
+        </p>
+      </div>
+      <div
+        flex-xs="100"
+        flex-gt-xs="50">
+        <p>
+          flex-xs="100"<br>
+          flex-gt-xs="50"<br>
+        </p>
+      </div>
+      <div
+        flex-xs="100"
+        flex-gt-xs="50">
+        <p>
+          flex-xs="100"<br>
+          flex-gt-xs="50"<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+  var colors = [
+    'Black',
+    'Navy',
+    'DarkBlue',
+    'MediumBlue',
+    'Blue',
+    'DarkGreen',
+    'Green',
+    'Teal',
+    'DarkCyan',
+    'DeepSkyBlue',
+    'DarkTurquoise',
+    'MediumSpringGreen',
+    'Lime',
+    'SpringGreen',
+    'Aqua',
+    'Cyan',
+    'MidnightBlue',
+    'DodgerBlue',
+    'LightSeaGreen',
+    'ForestGreen',
+    'SeaGreen',
+    'DarkSlateGray',
+    'DarkSlateGrey',
+    'LimeGreen',
+    'MediumSeaGreen',
+    'Turquoise',
+    'RoyalBlue',
+    'SteelBlue',
+    'DarkSlateBlue',
+    'MediumTurquoise',
+    'Indigo  ',
+    'DarkOliveGreen',
+    'CadetBlue',
+    'CornflowerBlue',
+    'RebeccaPurple',
+    'MediumAquaMarine',
+    'DimGray',
+    'DimGrey',
+    'SlateBlue',
+    'OliveDrab',
+    'SlateGray',
+    'SlateGrey',
+    'LightSlateGray',
+    'LightSlateGrey',
+    'MediumSlateBlue',
+    'LawnGreen',
+    'Chartreuse',
+    'Aquamarine',
+    'Maroon',
+    'Purple',
+    'Olive',
+    'Gray',
+    'Grey',
+    'SkyBlue',
+    'LightSkyBlue',
+    'BlueViolet',
+    'DarkRed',
+    'DarkMagenta',
+    'SaddleBrown',
+    'DarkSeaGreen',
+    'LightGreen',
+    'MediumPurple',
+    'DarkViolet',
+    'PaleGreen',
+    'DarkOrchid',
+    'YellowGreen',
+    'Sienna',
+    'Brown',
+    'DarkGray',
+    'DarkGrey',
+    'LightBlue',
+    'GreenYellow',
+    'PaleTurquoise',
+    'LightSteelBlue',
+    'PowderBlue',
+    'FireBrick',
+    'DarkGoldenRod',
+    'MediumOrchid',
+    'RosyBrown',
+    'DarkKhaki',
+    'Silver',
+    'MediumVioletRed',
+    'IndianRed ',
+    'Peru',
+    'Chocolate',
+    'Tan',
+    'LightGray',
+    'LightGrey',
+    'Thistle',
+    'Orchid',
+    'GoldenRod',
+    'PaleVioletRed',
+    'Crimson',
+    'Gainsboro',
+    'Plum',
+    'BurlyWood',
+    'LightCyan',
+    'Lavender',
+    'DarkSalmon',
+    'Violet',
+    'PaleGoldenRod',
+    'LightCoral',
+    'Khaki',
+    'AliceBlue',
+    'HoneyDew',
+    'Azure',
+    'SandyBrown',
+    'Wheat',
+    'Beige',
+    'WhiteSmoke',
+    'MintCream',
+    'GhostWhite',
+    'Salmon',
+    'AntiqueWhite',
+    'Linen',
+    'LightGoldenRodYellow',
+    'OldLace',
+    'Red',
+    'Fuchsia',
+    'Magenta',
+    'DeepPink',
+    'OrangeRed',
+    'Tomato',
+    'HotPink',
+    'Coral',
+    'DarkOrange',
+    'LightSalmon',
+    'Orange',
+    'LightPink',
+    'Pink',
+    'Gold',
+    'PeachPuff',
+    'NavajoWhite',
+    'Moccasin',
+    'Bisque',
+    'MistyRose',
+    'BlanchedAlmond',
+    'PapayaWhip',
+    'LavenderBlush',
+    'SeaShell',
+    'Cornsilk',
+    'LemonChiffon',
+    'FloralWhite',
+    'Snow',
+    'Yellow',
+    'LightYellow',
+    'Ivory',
+    'White'
+  ];
+  var pickRandom = function(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+  var getInvertColor = function(rgb) {
+    var parts = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+    var brightness = 1;
+    var ir = Math.floor((255-parts[1]) * brightness);
+    var ig = Math.floor((255-parts[2]) * brightness);
+    var ib = Math.floor((255-parts[3]) * brightness);
+    return 'rgb(' + ir + ',' + ig + ',' + ib + ')';
+  }
+  var els = document.querySelectorAll('[layout="row"] div');
+  for (let el of els) {
+    var colorBg = pickRandom(colors);
+    el.style.backgroundColor = colorBg;
+    el.style.color = getInvertColor(
+      window.getComputedStyle(el, null).getPropertyValue("background-color")
+    );
+  }
+  </script>
+</body>
+</html>
