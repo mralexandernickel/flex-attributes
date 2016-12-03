@@ -4,6 +4,14 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON "package.json"
     dist_path: "dist"
     src_path: "src"
+    includereplace:
+      demo:
+        options:
+          prefix: '<!-- @@'
+          suffix: ' -->'
+          includesDir: '.'
+        src: 'node_modules/@mralexandernickel/gh-boilerplate/src/template/layout.html'
+        dest: 'index.html'
     sass:
       dist:
         files:
@@ -21,6 +29,7 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks "grunt-sass"
   grunt.loadNpmTasks "grunt-contrib-cssmin"
+  grunt.loadNpmTasks "grunt-include-replace"
 
   grunt.registerTask "default", ["sass"]
-  grunt.registerTask "dist", ["sass","cssmin"]
+  grunt.registerTask "dist", ["sass","cssmin","includereplace"]
