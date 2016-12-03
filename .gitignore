@@ -1,3 +1,4 @@
 node_modules/*
 node_modules/@mralexandernickel/*
 !node_modules/@mralexandernickel/gh-boilerplate
+!node_modules/systemjs
