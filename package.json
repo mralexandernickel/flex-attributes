@@ -1,6 +1,6 @@
 {
   "name": "@mralexandernickel/flex-attributes",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Attribute helper for flexbox layouts extracted from angular/material",
   "main": "flex-attributes.css",
   "scripts": {
@@ -11,9 +11,7 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.2",
-    "grunt-sass": "^1.2.1"
-  },
-  "dependencies": {
+    "grunt-sass": "^1.2.1",
     "@mralexandernickel/gh-boilerplate": "^0.4.0"
   }
 }
